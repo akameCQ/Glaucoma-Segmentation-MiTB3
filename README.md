@@ -29,6 +29,10 @@ Finding the right balance between pixel-wise accuracy and overall shape preserva
 *   Implemented `torch.cuda.amp.autocast()` and `GradScaler` for Mixed Precision Training.
 *   Maximized Colab's A100 GPU utilizing `batch_size=32`, `num_workers=8`, and `pin_memory=True`.
 ---
+## 🏆 The Final Consolidated Pipeline (Summary)
+To ensure reproducibility and ease of use, the very end of the notebook contains a **Consolidated Summary block**. 
+Instead of navigating through all the experimental phases, users and reviewers can jump straight to this final section. It seamlessly strings together the most successful configurations discovered during the experiments: the optimal Grayscale DataLoader, the `Focal+Dice` Hybrid Loss, the A100 Turbo settings, and the finalized model architecture into one clean, ready-to-execute workflow.
+---
 ## 🖼️ Rich Visual Outputs & Analysis
 The included `.ipynb` notebook is heavily focused on visual evaluation. Instead of just printing numbers, the code generates comprehensive visual panels:
 *   **Monte Carlo (MC) Dropout Analysis:** The notebook runs 20 forward passes with active dropout layers to generate an **Uncertainty Heatmap** (showing high-variance pixels) and a **Confidence Score**.
